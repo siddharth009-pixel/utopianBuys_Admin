@@ -6,7 +6,7 @@ import { addProduct } from '../../actions/product.action'
 import Layout from '../../components/Layout'
 import { Input } from '../../UI/Input'
 import Modal from '../../UI/Modal'
-import { generatePublicUrl } from '../../urlConfig'
+import { generatePublicUrl, localImageToLocalTunnelImage } from '../../urlConfig'
 import './style.css'
 
 
@@ -198,8 +198,8 @@ export default function Products() {
                                 productDetails.productPictures ? productDetails.productPictures.map(pic => {
                                     return (
                                         <div className="productImageContainer" key={pic._id}>
-                                            <a href={generatePublicUrl(pic.img)}>  
-                                                <img src={generatePublicUrl(pic.img)} />
+                                            <a href={localImageToLocalTunnelImage(pic.img)}>  
+                                                <img src={localImageToLocalTunnelImage(pic.img)} />
                                             </a>
                                         </div>
                                     )
