@@ -1,0 +1,45 @@
+.Sidebar{
+    background-color: #cecece;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    padding-top: 90px;
+    z-index: 1;
+}
+
+.Sidebar ul li{
+    background-color:#cecece ;
+}
+
+.Sidebar ul li a{
+    display: block;
+    color: #333;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 5px 0 0 5px;
+    text-decoration: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.Sidebar ul li a.active{
+    background-color: #212121;
+    color: #fff;
+}
+
+.Sidebar ul li a:hover{
+    background-color: grey;
+    color: #fff;
+}
+
+.sidebarChildren{
+    margin-left: auto;
+}
+
+
+.navLinkClass{
+    color:black;
+}

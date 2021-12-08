@@ -1,0 +1,17 @@
+.key{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.productImageContainer{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.productImageContainer img{
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
